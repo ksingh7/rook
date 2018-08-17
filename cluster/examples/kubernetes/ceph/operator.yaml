@@ -337,7 +337,7 @@ spec:
         # This is necessary to workaround the anyuid issues when running on OpenShift.
         # For more details see https://github.com/rook/rook/issues/1314#issuecomment-355799641
         - name: ROOK_HOSTPATH_REQUIRES_PRIVILEGED
-          value: "false"
+          value: "true"
         # The name of the node to pass with the downward API
         - name: NODE_NAME
           valueFrom:
