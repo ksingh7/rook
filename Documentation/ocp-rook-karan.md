@@ -22,7 +22,7 @@ oc label node node04.internal.aws.testdrive.openshift.com role=storage-node
 oc label node node05.internal.aws.testdrive.openshift.com role=storage-node
 oc label node node06.internal.aws.testdrive.openshift.com role=storage-node
 
-oc create -f cluster-v2.yaml
+oc create -f cluster-v1.yaml
 
 oc adm pod-network join-projects rook-ceph-system --to=rook-ceph
 oc get netnamespaces rook-ceph rook-ceph-system
